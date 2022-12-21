@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        padding: 10px;
+        margin: 30px;
+        border: 2px solid red;
+        width: 300px;
+        text-align: center;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 50px;
+      }
+
+      .flex-x {
+        width: 300px;
+        text-align: center;
+      }
+
+      .flex-1 {
+        order: 2;
+      }
+
+      .flex-2 {
+        order: 1;
+      }
+
+      @media (max-width: 768px) and (min-width: 501px) {
+        .flex {
+          color: red;
+        }
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <div class="flex">
+      <p class="flex-x flex-1">một</p>
+      <p class="flex-x flex-2">hai</p>
+      <p class="flex-x flex-3">ba</p>
+    </div>
+  </body>
+</html>
